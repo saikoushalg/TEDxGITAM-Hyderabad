@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEDxGITAMHyderabad</title>
+
+    <!-- TITLE BAR ICON -->
+    <link rel="icon" href="https://pa.tedcdn.com/favicon.ico" type="image/icon type">
+    <!-- TITLE BAR ICON -->
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <!-- FONT -->
+
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- EXTERNAL CSS -->
+
+    <!-- EXTERNAL JS -->
+    <script src="script.js"></script>
+    <!-- EXTERNAL JS -->
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo"><a href="#"><img src="./Assets/logo-white.png" width="150px" height="auto"></a></div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="speakers.html">Speakers</a>
+                </li>
+                <li>
+                    <a href="tickets.html">Tickets</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="sponsors.html">Sponsors</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function () {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+
+        }
+    </script>
+    <!-- NAVBAR -->
+
+    <!-- ABOUT THEME -->
+    <main>
+        <section class="about-ted">
+            <div class="container">
+                <div class="about-image">
+                    <img src="./Assets/logo-white.png" alt="TED logo">
+                </div>
+                <div class="about-content-home">
+                    <h2>Rewind the Millennium</h2>
+                    <p>
+                        Rewind the Millennium is a topic that takes us back to the times 
+                        of the turn of the century. It is an opportunity to reflect 
+                        on the monumental changes that have taken place in our world 
+                        and in ourselves over the past two decades. This topic 
+                        invites us to revisit the moments of the past and analyze 
+                        the impact they have had on our present. We can learn from 
+                        the past, draw inspiration from it, and use it to shape our 
+                        future.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ABOUT THEME -->
+
+    <!-- QUICK LINKS -->
+    <section class="quick-links">
+        <div class="container">
+          <div class="quick-links-wrapper">
+            <a href="contact.html" class="quick-link">Contact Us</a>
+            <a href="tickets.html" class="quick-link">Buy Tickets</a>
+          </div>
+        </div>
+      </section>
+    <!-- QUICK LINKS -->
+
+    <!-- SOCIAL MEDIA -->
+    <div class="social-links">
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="./Assets/icons/instagram.png" alt="Instagram">
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+            <img src="./Assets/icons/twitter.png" alt="Twitter">
+        </a>
+        <a href="https://www.linkedin.com/" target="_blank">
+            <img src="./Assets/icons/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="mailto:tedxgitamhyderabad@gitam.in" target="_blank">
+            <img src="./Assets/icons/mail.png" alt="Email">
+        </a>
+    </div>
+
+    <!-- SOCIAL MEDIA -->
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2023 TEDxGITAM Hyderabad. All rights reserved.</p>
+    </footer>
+    <!-- FOOTER -->
+</body>
+
+</html>

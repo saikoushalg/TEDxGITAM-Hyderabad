@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | TEDxGITAMHyderabad</title>
+
+    <!-- TITLE BAR ICON -->
+    <link rel="icon" href="https://pa.tedcdn.com/favicon.ico" type="image/icon type">
+    <!-- TITLE BAR ICON -->
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <!-- FONT -->
+
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- EXTERNAL CSS -->
+
+    <!-- EXTERNAL JS -->
+    <script src="script.js"></script>
+    <!-- EXTERNAL JS -->
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo"><a href="#"><img src="./Assets/logo-white.png" width="150px" height="auto"></a></div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="speakers.html">Speakers</a>
+                </li>
+                <li>
+                    <a href="tickets.html">Tickets</a>
+                </li>
+                <li>
+                    <a href="about.html" class="active">About</a>
+                </li>
+                <li>
+                    <a href="sponsors.html">Sponsors</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function () {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+
+        }
+    </script>
+    <!-- NAVBAR -->
+
+    <!-- ABOUT SECTION -->
+    <main>
+		<section class="about-ted">
+			<div class="container">
+				<div class="about-image">
+					<img src="./Assets/logo-white.png" alt="TED logo">
+				</div>
+				<div class="about-content">
+					<h2>About TED</h2>
+					<p>TED is a nonprofit organization that brings together people from the worlds of Technology, Entertainment, and Design. Its mission is to spread ideas that are worth sharing.</p>
+				</div>
+			</div>
+		</section>
+
+        <section class="about-tedx">
+			<div class="container">
+				<div class="about-image">
+					<img src="./Assets/logo-white.png" alt="TEDx logo">
+				</div>
+				<div class="about-content">
+					<h2>About TEDx</h2>
+					<p>TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. These events are organized by independent individuals who want to create a TED-like experience in their own community.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="about-tedxgitamhyderabad">
+			<div class="container">
+				<div class="about-image">
+					<img src="./Assets/logo-white.png" alt="TEDxGITAMHyderabad logo">
+				</div>
+				<div class="about-content">
+					<h2>About TEDxGITAMHyderabad</h2>
+					<p>TEDxGITAMHyderabad is a TEDx event organized by the students of GITAM (Deemed to be University), Hyderabad. Our mission is to bring together bright minds to give talks that are idea-focused, and on a wide range of subjects, to foster learning, inspiration, and wonder.</p>
+				</div>
+			</div>
+		</section>
+	</main>
+    <!-- ABOUT SECTION -->
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2023 TEDxGITAM Hyderabad. All rights reserved.</p>
+    </footer>
+    <!-- FOOTER -->
+</body>
+
+</html>

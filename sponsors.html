@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sponsors | TEDxGITAMHyderabad</title>
+
+    <!-- TITLE BAR ICON -->
+    <link rel="icon" href="https://pa.tedcdn.com/favicon.ico" type="image/icon type">
+    <!-- TITLE BAR ICON -->
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <!-- FONT -->
+
+    <!-- EXTERNAL CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- EXTERNAL CSS -->
+
+    <!-- EXTERNAL JS -->
+    <script src="script.js"></script>
+    <!-- EXTERNAL JS -->
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo"><a href="#"><img src="./Assets/logo-white.png" width="150px" height="auto"></a></div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="speakers.html">Speakers</a>
+                </li>
+                <li>
+                    <a href="tickets.html">Tickets</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="sponsors.html" class="active">Sponsors</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function () {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+
+        }
+    </script>
+    <!-- NAVBAR -->
+
+
+    <!-- SPONSORS SECTION -->
+    <div>
+        <h2 class="hiding-heading">Sponsors</h2>
+    </div>
+    <div class="carousel">
+        <div class="carousel-inner">
+            <figure class="carousel-item">
+                <a href="#"><img src="./Assets/speakers/speaker1.jpg" alt="Image 1"></a>
+                <span style="color: white;"> Sponsor 1</span>
+                <!-- <figcaption>Image 1 Caption</figcaption> -->
+            </figure>
+            <figure class="carousel-item">
+                <a href="#"><img src="./Assets/speakers/speaker1.jpg" alt="Image 2"></a>
+                <span style="color: white;"> Sponsor 2</span>
+                <!-- <figcaption>Image 2 Caption</figcaption> -->
+            </figure>
+            <figure class="carousel-item">
+                <a href="#"><img src="./Assets/speakers/speaker1.jpg" alt="Image 3"></a>
+                <span style="color: white;"> Sponsor 3</span>
+                <!-- <figcaption>Image 3 Caption</figcaption> -->
+            </figure>
+        </div>
+    </div>
+
+    <!-- SPONSORS SECTION -->
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2023 TEDxGITAM Hyderabad. All rights reserved.</p>
+    </footer>
+    <!-- FOOTER -->
+</body>
+
+</html>
