@@ -464,6 +464,7 @@ h2 {
 
 .about-image img {
   max-width: 100%;
+  height: 200px;
 }
 
 .about-content {
@@ -496,24 +497,34 @@ h2 {
     margin-top: 200px;
   }
 
+  .about-ted, .about-tedx, .about-tedxgitamhyderabad p{
+    line-height: 1.6;
+  }
+
   .about-image {
     width: 40%;
     margin-right: 20px;
     margin-bottom: 0;
     margin-left: 5%;
   }
+  .tedxabout{
+    height: 300px;
+  }
+  .tedabout{
+    height: 200px;
+  }
 
   .about-content {
     margin-left: 50%;
     margin-right: 5%;
-    margin-top: -115px;
+    margin-top: -210px;
     text-align: left;
   }
 
   .about-content-home {
     margin-left: 50%;
     margin-right: 5%;
-    margin-top: -150px;
+    margin-top: -200px;
     text-align: left;
   }
 }
