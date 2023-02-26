@@ -27,6 +27,25 @@
     <!-- PHP -->
 
     <!-- PHP -->
+
+
+    <script>
+        window.addEventListener("load", function () {
+            const form = document.getElementById('contact-form');
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+                const data = new FormData(form);
+                const action = e.target.action;
+                fetch(action, {
+                    method: 'POST',
+                    body: data,
+                })
+                    .then(() => {
+                        alert("Thank You!👍 we will get back to you ASAP!");
+                    })
+            });
+        });
+    </script>
 </head>
 
 <body>
