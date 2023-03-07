@@ -45,6 +45,10 @@
                     })
             });
         });
+
+        function clearForm() {
+            document.getElementById("contact-form").reset();
+        }
     </script>
 </head>
 
@@ -52,7 +56,8 @@
 
     <!-- NAVBAR -->
     <header>
-        <div class="logo"><a href="index.html"><img src="./Assets/logo-white.png" width="150px" height="auto"></a></div>
+        <div class="logo"><a href="index.html"><img src="./Assets/logo-white.png" width="150px" height="auto"
+                    alt="logo"></a></div>
         <div class="hamburger">
             <div class="line"></div>
             <div class="line"></div>
@@ -95,7 +100,7 @@
     <div class="contact-section">
         <h2>Contact Us</h2>
         <form
-            action="https://script.google.com/macros/s/AKfycbxfAj38HkicQWItUzGHjwTFrOES0tIt2S0QzvI00sLaZasozapsTovw1pdQsHLQZgEprw/exec"
+            action="https://script.google.com/a/macros/gitam.in/s/AKfycbxBR9Gq603nLrLWt4oXV9ErlNu2VBWY9xvLlN9qMmaadOW2K9vLGxyUnys7fyYff3WOrg/exec"
             method="POST" id="contact-form" role="form">
 
             <label for="name">Name</label>
@@ -111,7 +116,7 @@
             <textarea id="Message" name="Message" placeholder="Type Your Message" style="height:200px"
                 required></textarea>
 
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" onclick="clearForm()">
         </form>
     </div>
 
