@@ -22,11 +22,13 @@
 
     <!-- EXTERNAL JS -->
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"></script>
     <!-- EXTERNAL JS -->
 
 </head>
 
-<body>
+<body id="body">
 
 
     <!-- NAVBAR -->
@@ -126,6 +128,23 @@
         <p>&copy; 2023 TEDxGITAM Hyderabad. All rights reserved.</p>
     </footer>
     <!-- FOOTER -->
+
+    <script>
+        VANTA.TRUNK({
+          el: "html",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0x460000,
+          backgroundColor: 0x0,
+          spacing: 1.00,
+          chaos: 5.00
+        })
+        </script>
 </body>
 
 </html>
