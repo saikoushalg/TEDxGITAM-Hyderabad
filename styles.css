@@ -23,8 +23,9 @@ footer {
   background-color: #eb0028;
   color: white;
   text-align: center;
-  font-weight: lighter;
+  font-weight: bold;
   font-size: small;
+  height: 20px;
 }
 
 
@@ -141,8 +142,6 @@ header {
   background-color: #000;
   color: #fff;
   padding: 50px;
-  border: 3px solid #eb0028;
-  border-radius: 40px;
   margin-top: 100px;
   margin-left: 100px;
   margin-right: 100px;
@@ -163,10 +162,36 @@ form {
   flex-direction: column;
 }
 
+.form-input {
+  background: transparent;
+  border: none;
+  border-bottom: solid 2px #eb0028;
+} 
+
+.form-input {
+  outline: none;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: medium;
+  caret-color: red;
+  border-bottom: solid 2px #eb0028;
+}
+
+.form-input:focus, .form-input:active {
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: solid 2px #eb0028;
+}
+
+
 label {
   font-size: 18px;
   margin-bottom: 10px;
 }
+
+
 
 input[type=text],
 input[type=tel],
@@ -174,14 +199,14 @@ input[type=email],
 textarea {
   width: 100%;
   padding: 12px;
-  border: none;
-  border-radius: 4px;
   margin-bottom: 20px;
   resize: vertical;
 }
 
 input[type=submit] {
-  background-color: #f44336;
+  font-size: medium;
+  font-weight: 800;
+  background-color: #eb0028;
   color: #fff;
   padding: 12px 20px;
   border: none;
@@ -190,7 +215,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #eb0028;
+  background-color: #f44336;
 }
 
 /* Mobile styles */
