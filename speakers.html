@@ -26,41 +26,41 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
   <!-- EXTERNAL JS -->
-  
+
 </head>
 
 <style>
- .swiper {
-      width: 100%;
-      padding-top: 50px;
-      padding-bottom: 100px;
-    }
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
 
-    .swiper-slide {
-      position: relative;
-      background-position: center;
-      background-size: cover;
-      width: 400px;
-      height: 400px;
-    }
+  .swiper-slide {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+  }
 
   .speaker-text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  padding: 20px;
-}
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+  }
 
-.speaker-text h3 {
-  margin: 0;
-}
+  .speaker-text h3 {
+    margin: 0;
+  }
 
-.speaker-text p {
-  margin: 0;
-}
+  .speaker-text p {
+    margin: 0;
+  }
 
     .swiper-slide img {
       display: block;
@@ -69,7 +69,8 @@
       padding: 5px;
     }
 
-    .swiper-button-prev, .swiper-button-next {
+  .swiper-button-prev,
+  .swiper-button-next {
     position: absolute;
     top: 50%;
     width: 50px;
@@ -87,13 +88,16 @@
   }
 
   @media only screen and (max-width: 600px) {
-    .swiper-button-prev, .swiper-button-next {
+
+    .swiper-button-prev,
+    .swiper-button-next {
       margin-bottom: 0px;
       margin-top: 50px;
     }
-}
+  }
 
-  .swiper-button-prev:hover, .swiper-button-next:hover {
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
     background-color: rgba(255, 255, 255, 1);
     transform: scale(1.1);
   }
@@ -106,19 +110,18 @@
     right: 0;
   }
 
-.swiper-pagination-bullet {
-     background-color: #FFF;
-     height: 20px;
-     width: 20px;
+  .swiper-pagination-bullet {
+    background-color: #FFF;
+    height: 20px;
+    width: 20px;
 
-}
+  }
 
-.swiper-pagination-bullet-active {
-     background-color: #EB0028;
-     height: 20px;
-     width: 20px;
-}
-
+  .swiper-pagination-bullet-active {
+    background-color: #EB0028;
+    height: 20px;
+    width: 20px;
+  }
 </style>
 
 <body>
@@ -145,9 +148,9 @@
         <li>
           <a href="about.html">About</a>
         </li>
-        <li>
+        <!-- <li>
           <a href="sponsors.html">Sponsors</a>
-        </li>
+        </li> -->
         <li>
           <a href="contact.html">Contact</a>
         </li>
@@ -169,7 +172,7 @@
     <h2 class="hiding-heading">Speakers</h2>
   </div>
   <section>
-    
+
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
@@ -180,21 +183,23 @@
           </div>
         </div>
         <div class="swiper-slide">
-          <img src="./Assets/speakers/sajjad.jpg" height="400px" width="500px"/>
+          <img src="./Assets/speakers/sajjad.jpg" height="400px" width="500px" />
           <div class="speaker-text">
             <h3>Sajjad Shahid</h3>
-            <p>Sajjad Shahid, a Hyderabad historian and conservator, excels in conserving historical sites.</p>
+            <p>Sajjad Shahid, a native of Hyderabad, is a civil engineer, historian, architecture conservator, and
+              columnist.</p>
           </div>
         </div>
         <div class="swiper-slide">
-          <img src="./Assets/speakers/savitasastry.jpg" height="400px" width="500px"/>
+          <img src="./Assets/speakers/savitasastry.jpg" height="400px" width="500px" />
           <div class="speaker-text">
             <h3>Savitha Sastry</h3>
-            <p>Savitha Sastry is an Indian dancer who uses Bharatanatyam techniques to tell unique stories, moving beyond traditional Indian mythology and religion.</p>
+            <p>Savitha Sastry is an Indian dancer who uses Bharatanatyam techniques to tell unique stories, moving
+              beyond traditional Indian mythology and religion.</p>
           </div>
         </div>
         <div class="swiper-slide">
-          <img src="./Assets/speakers/skippi.jpg" height="400px" width="500px"/>
+          <img src="./Assets/speakers/skippi.jpg" height="400px" width="500px" />
           <div class="speaker-text">
             <h3>Ravi and Anuja</h3>
             <p>Hyderabad-based Anuja and Ravi Kabra launched what the duo claim to be India’s first ice pop brand called Skippi. </p>
@@ -218,10 +223,10 @@
       <div class="swiper-pagination"></div>
     </div>
 
-   
+
   </section>
   <div class="swiper-button-prev"></div>
-<div class="swiper-button-next"></div>
+  <div class="swiper-button-next"></div>
 
 
 
@@ -229,11 +234,12 @@
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; 2023 TEDxGITAM Hyderabad. All rights reserved.</p>
+    <p>&copy; 2023 TEDxGITAM Hyderabad. All rights reserved. This independent TEDx event is operated under license from
+      TED.</p>
   </footer>
   <!-- FOOTER -->
 
-    <!-- Swiper JS -->
+  <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
   <!-- Initialize Swiper -->
@@ -254,18 +260,18 @@
         el: ".swiper-pagination",
       },
       navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
     });
 
-      document.addEventListener('keydown', function(e) {
-    if (e.key === 'ArrowLeft') {
-      swiper.slidePrev();
-    } else if (e.key === 'ArrowRight') {
-      swiper.slideNext();
-    }
-  });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft') {
+        swiper.slidePrev();
+      } else if (e.key === 'ArrowRight') {
+        swiper.slideNext();
+      }
+    });
   </script>
 
 <!-- <script>
