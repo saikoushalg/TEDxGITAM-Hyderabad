@@ -22,6 +22,8 @@
 
     <!-- EXTERNAL JS -->
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
     <!-- EXTERNAL JS -->
 
     <!-- PHP -->
@@ -42,12 +44,10 @@
                 })
                     .then(() => {
                         alert("Thank You!👍 we will get back to you ASAP!");
+                        form.reset();
                     })
             });
         });
-
-
-
 
     </script>
 </head>
@@ -103,16 +103,16 @@
             action="https://script.google.com/macros/s/AKfycbxmNWyQUynW-PY_TvEgPcdTbi9bSZvrpbV94Svc596tDwP5HFY60lXNK6SV0kgK2dY9/exec"
             method="POST" id="contact-form" role="form">
 
-            <label for="name">Name</label>
+            <label for="name">Name<strong>*</strong></label>
             <input type="text" id="Name" name="Name" class="form-input" required>
 
-            <label for="contact">Contact Number</label>
+            <label for="contact">Contact Number<strong>*</strong></label>
             <input type="tel" id="Contact" name="Contact" class="form-input" required>
 
-            <label for="email">Email</label>
+            <label for="email">Email<strong>*</strong></label>
             <input type="email" id="Email" name="Email" class="form-input" required>
 
-            <label for="message">Message</label>
+            <label for="message">Message<strong>*</strong></label>
             <textarea id="Message" name="Message" style="height:200px" class="form-input" 
                 required></textarea>
 
@@ -144,6 +144,24 @@
         <p>&copy; 2023 TEDxGITAM Hyderabad. All rights reserved.</p>
     </footer>
     <!-- FOOTER -->
+    <script>
+        VANTA.DOTS({
+          el: "html",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          scaleMobile: 1.00,
+          color: 0xff0000,
+          color2: 0xff0000,
+          backgroundColor: 0x0,
+          size: 2.10,
+          spacing: 57.00,
+          showLines: false
+        })
+        </script>
 </body>
 
 </html>
